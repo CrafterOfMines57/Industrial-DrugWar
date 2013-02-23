@@ -1,0 +1,27 @@
+[
+{
+  "modid": "shadows.mods",
+  "name": "Industrial Drug War!",
+  "description": "Stuff",
+  "version": "0.1",
+  "mcversion": "1.4.6",
+  "url": "",
+  "updateUrl": "",
+  "authors": [
+    "Mensrea", "captain_shadows", "cisco056"
+  ],
+  "credits": "Created by captain_shadows and Mensrea; Textures by cisco056, with a Special thanks to the whole IC2 Dev. Team.",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "requiredMods": [
+    "Forge",
+    "FML"
+  ],
+  "dependencies": [
+  	
+  ],
+  "useDependencyInformation" : "false"
+}
+]
