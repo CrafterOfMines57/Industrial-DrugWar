@@ -8,15 +8,16 @@ import net.minecraft.world.World;
 
 public class CocaSeed extends ItemSeeds {
 
-	public CocaSeed(int id, int type, int soilID) {
+	public CocaSeed(int id, int type, int soilID)
+	{
 		super(id, type, soilID);
 		setIconIndex(1);
 		setItemName("seeds.coca");
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
-	public String getTextureFile() {
+	public String getTextureFile()
+	{
 		return Registry.items;
 	}
 	
