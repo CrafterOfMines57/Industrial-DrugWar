@@ -1,6 +1,6 @@
 [
 {
-  "modid": "shadows.mods",
+  "modid": "shadows.IDW",
   "name": "Industrial Drug War!",
   "description": "Stuff",
   "version": "0.1",
@@ -10,7 +10,7 @@
   "authors": [
     "Mensrea", "captain_shadows", "CrafterOfMines", "cisco056"
   ],
-  "credits": "Created by captain_shadows, Mensrea, and CrafterOfMines; Textures by cisco056, with a Special thanks to the whole IC2 Dev. Team.",
+  "credits": "Created by captain_shadows, and CrafterOfMines; Textures by Mensrea and cisco056, with a Special thanks to the whole IC2 Dev. Team.",
   "logoFile": "",
   "screenshots": [
   ],

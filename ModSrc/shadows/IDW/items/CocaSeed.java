@@ -10,9 +10,14 @@ public class CocaSeed extends ItemSeeds {
 
 	public CocaSeed(int id, int type, int soilID) {
 		super(id, type, soilID);
-		setTextureFile(Registry.items);
 		setIconIndex(1);
 		setItemName("seeds.coca");
 		// TODO Auto-generated constructor stub
 	}
+	
+	@Override
+	public String getTextureFile() {
+		return Registry.items;
+	}
+	
 }

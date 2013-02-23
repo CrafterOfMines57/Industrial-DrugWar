@@ -16,8 +16,7 @@ public class CocaBlock extends Block{
 	public CocaBlock(int id, int textureIndex) {
 		super(id, textureIndex, Material.plants);
 		// TODO Auto-generated constructor stub.
-		setTextureFile(Registry.blocks);
-		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F , 0.5F, 1.0F);
+		this.setBlockBounds(0.0F, -0.9F, 0.0F, 1.0F , 0.1F, 1.0F);
 	}
 	
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z) {
@@ -84,4 +83,10 @@ public class CocaBlock extends Block{
     public int idPicked (World world, int x, int y, int z) {
         return ModItems.coca.shiftedIndex;
     }
+    
+	@Override
+	public String getTextureFile() {
+		return Registry.blocks;
+	}
+    
 }
