@@ -19,7 +19,12 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid = Registry.id, name = Registry.name, version = Registry.ver, useMetadata = true/*, dependencies = "required-after:IC2; after:GregTech_Addon"*/)
+@Mod(modid = Registry.id, name = Registry.name, version = Registry.ver, useMetadata = true/*
+																						 * ,
+																						 * dependencies
+																						 * =
+																						 * "required-after:IC2; after:GregTech_Addon"
+																						 */)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class MainClass {
 
@@ -35,7 +40,7 @@ public class MainClass {
 	public void preInit(FMLPreInitializationEvent event) {
 
 		boolean var1 = Handler.isModLoaded();
-		
+
 		if (var1 == false) {
 			Config.init(event);
 			Handler.LoadMod();
@@ -48,7 +53,9 @@ public class MainClass {
 		proxy.init();
 
 		ModItems.init();
+
 		ModBlocks.init();
+
 		Handler.init();
 
 	}
