@@ -1,7 +1,6 @@
 package shadows.IDW.blocks;
 
 import shadows.IDW.items.ModItems;
-import shadows.IDW.utils.Registry;
 
 public class CocaBlock extends CropBlock {
 
