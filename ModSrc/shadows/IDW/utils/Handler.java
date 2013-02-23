@@ -1,11 +1,9 @@
 package shadows.IDW.utils;
 
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenDesert;
 import shadows.IDW.items.ModItems;
-import shadows.IDW.utils.*;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Handler {
 

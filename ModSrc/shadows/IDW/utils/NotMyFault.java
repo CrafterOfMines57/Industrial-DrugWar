@@ -1,7 +1,5 @@
 package shadows.IDW.utils;
 
-import shadows.IDW.utils.Registry;
-
 public class NotMyFault extends RuntimeException {
 	private String mError;
 

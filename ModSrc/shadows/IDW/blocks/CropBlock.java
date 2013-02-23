@@ -6,7 +6,6 @@ import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.world.World;
-import shadows.IDW.items.ModItems;
 import shadows.IDW.utils.Registry;
 
 public class CropBlock extends BlockCrops {
@@ -15,11 +14,11 @@ public class CropBlock extends BlockCrops {
 	private int fertilized = 1;
 	// 1 for testing, should be 25
 	private int notFertilized = 1;
-	//Seed Item
+	// Seed Item
 	private ItemSeeds Seed;
-	//Crop Item
+	// Crop Item
 	private Item Crop;
-	
+
 	public CropBlock(int id, int textureIndex, ItemSeeds seed, Item crop) {
 		super(id, textureIndex);
 		this.Seed = seed;

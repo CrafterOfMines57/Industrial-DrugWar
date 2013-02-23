@@ -1,9 +1,7 @@
 package shadows.IDW.sided;
 
 import net.minecraftforge.client.MinecraftForgeClient;
-import shadows.IDW.sided.ServerProxy;
 import shadows.IDW.utils.Registry;
-import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class ClientProxy extends ServerProxy {
 
