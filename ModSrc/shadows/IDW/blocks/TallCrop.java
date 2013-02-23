@@ -6,18 +6,20 @@ import shadows.IDW.items.ModItems;
 import shadows.IDW.utils.Registry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
 
-public class TallCrop extends Block
+public class TallCrop extends CropBlock
 {
 	//static boolean canFertilize;
 	static int fertileGrowth = 12;
 	static int nonFertileGrowth = 25;
 	
-	public TallCrop(int id, int textureIndex/*,  boolean fertilize*/)
+	public TallCrop(int id, int textureIndex, ItemSeeds seeds, Item crop )
 	{
-		super(id, textureIndex, Material.plants);
+		super(id, textureIndex, seeds, crop);
 		this.setBlockBounds(0.0F, -0.9F, 0.0F, 1.0F , 0.1F, 1.0F);
 		
 		//canFertilize = fertilize;
