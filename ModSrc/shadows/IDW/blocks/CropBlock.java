@@ -6,6 +6,7 @@ import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenDesert;
 import shadows.IDW.utils.Registry;
 
 public class CropBlock extends BlockCrops {
@@ -32,24 +33,25 @@ public class CropBlock extends BlockCrops {
 
 	@Override
 	public void updateTick(World world, int x, int y, int z, Random random) {
-		/** Determines when Block stops growing (3 in this case) */
-		if (world.getBlockMetadata(x, y, z) == 3) {
-			return;
+		if (isSunVisible(world, x, y, z)) {
+			/** Determines when Block stops growing (3 in this case) */
+			if (world.getBlockMetadata(x, y, z) == 3) {
+				return;
+			}
+
+			/**
+			 * Checks to see if the plant will grow, if it's hydrated 1/12
+			 * chance, if it's not hydrated, 1/25 chance
+			 */
+			if (random.nextInt(isFertile(world, x, y - 1, z) ? fertilized
+					: notFertilized) != 0) {
+				return;
+			}
+
+			// Updates the Block
+			world.setBlockMetadataWithNotify(x, y, z,
+					world.getBlockMetadata(x, y, z) + 1);
 		}
-
-		/**
-		 * Checks to see if the plant will grow, if it's hydrated 1/12 chance,
-		 * if it's not hydrated, 1/25 chance
-		 */
-		if (random.nextInt(isFertile(world, x, y - 1, z) ? fertilized
-				: notFertilized) != 0) {
-			return;
-		}
-
-		// Updates the Block
-		world.setBlockMetadataWithNotify(x, y, z,
-				world.getBlockMetadata(x, y, z) + 1);
-
 	}
 
 	@Override
@@ -69,8 +71,10 @@ public class CropBlock extends BlockCrops {
 	 * Apply bonemeal to the crops.
 	 */
 	@Override
-	public void fertilize(World par1World, int par2, int par3, int par4) {
-		par1World.setBlockMetadataWithNotify(par2, par3, par4, 3);
+	public void fertilize(World world, int xCoord, int yCoord, int zCoord) {
+		// checks if the sun is visible
+		if (isSunVisible(world, xCoord, yCoord, zCoord))
+			world.setBlockMetadataWithNotify(xCoord, yCoord, zCoord, 3);
 	}
 
 	/**
@@ -92,4 +96,14 @@ public class CropBlock extends BlockCrops {
 		return Registry.blocks;
 	}
 
+	// *************************View of the sun***************************
+
+	public static boolean isSunVisible(World world, int xCoord, int yCoord,
+			int zCoord) {
+		return world.isDaytime()
+				&& !world.provider.hasNoSky
+				&& world.canBlockSeeTheSky(xCoord, yCoord, zCoord)
+				&& (world.getWorldChunkManager().getBiomeGenAt(xCoord, zCoord) instanceof BiomeGenDesert || !world
+						.isRaining() && !world.isThundering());
+	}
 }

@@ -2,6 +2,7 @@ package shadows.IDW.blocks;
 
 import net.minecraft.block.Block;
 import shadows.IDW.Config;
+import shadows.IDW.utils.Handler;
 
 public class ModBlocks {
 

@@ -8,10 +8,4 @@ public class CocaBlock extends CropBlock {
 	public CocaBlock(int id, int textureIndex) {
 		super(id, textureIndex, ModItems.cocaSeed, ModItems.cocaLeaf);
 	}
-
-	@Override
-	public String getTextureFile() {
-		return Registry.blocks;
-	}
-
 }
