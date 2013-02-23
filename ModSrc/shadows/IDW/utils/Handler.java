@@ -24,7 +24,8 @@ public class Handler {
 
 	private static void Language() {
 		// TODO Auto-generated method stub
-		LanguageRegistry.addName(ModItems.coca, "Coca Seeds");
+		LanguageRegistry.addName(ModItems.cocaSeed, "Coca Seeds");
+		LanguageRegistry.addName(ModItems.cocaLeaf, "Coca Leaf");
 	}
 	
 	//****************************Adding Recipies**********************

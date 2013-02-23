@@ -10,7 +10,7 @@ import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class Config {
-	public static int cocaItemID, cocaBlockID, cocaLeafItemID;
+	public static int cocaSeedID, cocaBlockID, cocaLeafItemID;
 
 	public static void init(FMLPreInitializationEvent event) {
 		File configFile = new File(event.getModConfigurationDirectory(), Registry.name + ".cfg");
@@ -21,10 +21,10 @@ public class Config {
 
 			//*************************Item config's***********************
 
-			cocaItemID = configuration.getItem("Coca Item", 9000 - 256, "Coca Item Id:")
+			cocaSeedID = configuration.getItem("Coca Seed", 9000 - 256, "Coca Seed Id:")
 					.getInt();
 			
-			cocaLeafItemID = configuration.getItem("Coca Leaf", 9000 - 256, "Coca Leaf Id:")
+			cocaLeafItemID = configuration.getItem("Coca Leaf", 9001 - 256, "Coca Leaf Id:")
 					.getInt();
 			
 			

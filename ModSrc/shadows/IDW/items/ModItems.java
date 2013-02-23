@@ -10,13 +10,13 @@ import net.minecraft.item.ItemSeeds;
 
 public class ModItems {
 
-	public static ItemSeeds coca;
+	public static ItemSeeds cocaSeed;
 	public static Item cocaLeaf;
 
 	public static void init() 
 	{
 
-		ModItems.coca = (new CocaSeed(Config.cocaItemID, Config.cocaBlockID,
+		ModItems.cocaSeed = (new CocaSeed(Config.cocaSeedID, Config.cocaBlockID,
 				Block.tilledField.blockID));
 		
 		ModItems.cocaLeaf = (new CocaLeaf(Config.cocaLeafItemID));
