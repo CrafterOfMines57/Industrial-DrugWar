@@ -2,6 +2,7 @@ package shadows.IDW;
 
 import java.util.logging.Logger;
 
+import shadows.IDW.blocks.ModBlocks;
 import shadows.IDW.items.ModItems;
 import shadows.IDW.sided.ServerProxy;
 import shadows.IDW.utils.Handler;
@@ -46,7 +47,9 @@ public class MainClass {
 
 		proxy.init();
 
-		ModItems.Init();
+		ModItems.init();
+		ModBlocks.init();
+		Handler.init();
 
 	}
 

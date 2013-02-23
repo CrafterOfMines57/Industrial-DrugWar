@@ -12,7 +12,7 @@ public class Handler {
 	private static boolean IsLoaded = false;
 	public boolean sunIsVisible = false;
 
-	public void init(){
+	public static void init(){
 		
 		Language();
 		
@@ -22,14 +22,14 @@ public class Handler {
 	
 	//***************************Adding Language stuff*****************
 
-	private void Language() {
+	private static void Language() {
 		// TODO Auto-generated method stub
 		LanguageRegistry.addName(ModItems.coca, "Coca Seeds");
 	}
 	
 	//****************************Adding Recipies**********************
 	
-	private void Recipes() {
+	private static void Recipes() {
 		// TODO Auto-generated method stub
 		
 	}

@@ -9,7 +9,7 @@ public class ModItems {
 
 	public static ItemSeeds coca;
 
-	public static void Init() {
+	public static void init() {
 
 		ModItems.coca = (new CocaSeed(Config.cocaItemID, Config.cocaBlockID,
 				Block.tilledField.blockID));
