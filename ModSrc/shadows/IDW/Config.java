@@ -21,12 +21,12 @@ public class Config {
 
 			//*************************Item config's***********************
 
-			cocaItemID = configuration.getItem("Coca Item", 90000 - 256, "Coca Item Id:")
+			cocaItemID = configuration.getItem("Coca Item", 9000 - 256, "Coca Item Id:")
 					.getInt();
 			
 			//*************************Block config's***********************
 			
-			cocaBlockID = configuration.getItem("Coca Block", 9000, "Coca Block Id:")
+			cocaBlockID = configuration.getBlock("Coca Block", 900, "Coca Block Id:")
 					.getInt();
 
 		} catch (Exception e) {

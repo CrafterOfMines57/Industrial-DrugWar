@@ -1,8 +1,10 @@
 package shadows.IDW.utils;
 
+import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenDesert;
+import shadows.IDW.items.ModItems;
 import shadows.IDW.utils.*;
 
 public class Handler {
@@ -10,6 +12,28 @@ public class Handler {
 	private static boolean IsLoaded = false;
 	public boolean sunIsVisible = false;
 
+	public void init(){
+		
+		Language();
+		
+		Recipes();
+		
+	}
+	
+	//***************************Adding Language stuff*****************
+
+	private void Language() {
+		// TODO Auto-generated method stub
+		LanguageRegistry.addName(ModItems.coca, "Coca Seeds");
+	}
+	
+	//****************************Adding Recipies**********************
+	
+	private void Recipes() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 	// *******************************Mod State Check*************************
 
 	public static boolean isModLoaded() {

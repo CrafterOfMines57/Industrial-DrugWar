@@ -3,15 +3,15 @@ package shadows.IDW.items;
 import shadows.IDW.Config;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSeeds;
 
 public class ModItems {
 
-	public static Item coca;
+	public static ItemSeeds coca;
 
 	public static void Init() {
 
 		ModItems.coca = (new CocaSeed(Config.cocaItemID, Config.cocaBlockID,
-				Block.tilledField.blockID)).setItemName("coca").setIconIndex(0);
+				Block.tilledField.blockID));
 	}
 }
