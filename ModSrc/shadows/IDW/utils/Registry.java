@@ -22,5 +22,6 @@ public class Registry {
 		// *********************************Textures********************************
 		
 		public static final String items = texture + "items.png";
+		public static final String blocks = texture + "blocks.png";
 		
 }

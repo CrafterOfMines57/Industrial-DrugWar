@@ -10,9 +10,6 @@ public class ClientProxy extends ServerProxy {
 	public void init() {
 		super.init();
 		MinecraftForgeClient.preloadTexture(Registry.items);
-	}
-
-	public int addArmor(String var1) {
-		return RenderingRegistry.addNewArmourRendererPrefix(var1);
+		MinecraftForgeClient.preloadTexture(Registry.blocks);
 	}
 }

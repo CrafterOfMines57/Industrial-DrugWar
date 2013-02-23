@@ -3,6 +3,7 @@ package shadows.IDW.blocks;
 import java.util.Random;
 
 import shadows.IDW.items.ModItems;
+import shadows.IDW.utils.Registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -15,7 +16,8 @@ public class CocaBlock extends Block{
 	public CocaBlock(int id, int textureIndex) {
 		super(id, textureIndex, Material.plants);
 		// TODO Auto-generated constructor stub.
-		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F , 1.5F, 1.0F);
+		setTextureFile(Registry.blocks);
+		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F , 0.5F, 1.0F);
 	}
 	
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z) {

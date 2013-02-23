@@ -1,5 +1,6 @@
 package shadows.IDW.items;
 
+import shadows.IDW.utils.Registry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
@@ -9,6 +10,7 @@ public class CocaSeed extends ItemSeeds {
 
 	public CocaSeed(int id, int type, int soilID) {
 		super(id, type, soilID);
+		setTextureFile(Registry.items);
 		setIconIndex(1);
 		setItemName("seeds.coca");
 		// TODO Auto-generated constructor stub
