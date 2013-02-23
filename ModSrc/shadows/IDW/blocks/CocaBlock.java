@@ -17,6 +17,7 @@ public class CocaBlock extends Block{
 		super(id, textureIndex, Material.plants);
 		// TODO Auto-generated constructor stub.
 		this.setBlockBounds(0.0F, -0.9F, 0.0F, 1.0F , 0.1F, 1.0F);
+		//System.out.println("Ignore this, this is a pull request test");
 	}
 	
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z) {
