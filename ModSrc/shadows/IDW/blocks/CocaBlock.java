@@ -1,4 +1,4 @@
-package shadows.IDW.items;
+package shadows.IDW.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

@@ -1,7 +1,6 @@
 package shadows.IDW.blocks;
 
 import shadows.IDW.Config;
-import shadows.IDW.items.CocaBlock;
 import net.minecraft.block.Block;
 
 public class ModBlocks {
